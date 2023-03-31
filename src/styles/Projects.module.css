@@ -1,0 +1,19 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+.container {
+  display: flex;
+  min-width: 100%;
+}
+
+.link {
+  margin: 20px;
+  min-width: 200px;
+  min-height: 200px;
+  border-radius: 15px;
+  border: 1px solid black;
+}

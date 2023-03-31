@@ -1,0 +1,17 @@
+.wrapper {
+  height: 50px;
+  display: flex;
+  color: #383838;
+  padding-right: 5%;
+  align-items: center;
+  background-color: #8a8989;
+  justify-content: flex-end;
+}
+
+.link {
+  display: flex;
+  margin-right: 20px;
+  align-items: center;
+  text-decoration: none;
+  gap: 8px;
+}
