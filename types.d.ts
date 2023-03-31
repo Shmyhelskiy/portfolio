@@ -6,6 +6,8 @@ type calculatorState = {
     firstOperand: string | null;
     waitingForSecondOperand: boolean;
     memory: number;
+    show: boolean;
+
   };
 
   type CalculatorAction = {

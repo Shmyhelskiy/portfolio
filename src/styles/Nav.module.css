@@ -4,3 +4,11 @@
   margin-left: 20px;
   gap: 8px;
 }
+
+.link {
+  padding: 20px;
+}
+.link:hover {
+  color: rgb(238, 88, 88);
+  transform: scale(1.2);
+}

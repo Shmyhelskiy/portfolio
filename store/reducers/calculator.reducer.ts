@@ -5,7 +5,8 @@ const initialState: calculatorState = {
         display: `0`,
         firstOperand: null,
         waitingForSecondOperand: false,
-        memory: 0
+        memory: 0,
+        show: false
 }
 
 const calculatorReducer = (state = initialState, action: CalculatorAction) => {
@@ -51,9 +52,12 @@ const calculatorReducer = (state = initialState, action: CalculatorAction) => {
             }    
         }
         case SHOW_RESULT: {
-            let {display, memory, firstOperand} = state
+            let {display, memory, firstOperand,show} = state
             const newResult = operation(Number(display),memory, firstOperand)?.toString()
-            return {...state, display: newResult}
+            if ( !firstOperand || show) {
+                return state
+            } 
+            return {...state, display: newResult, memory: 0, show: true}
         }
         default:
             return state
