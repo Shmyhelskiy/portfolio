@@ -2,6 +2,7 @@
 type Root = {
     calculator: calculatorState
 }
+
 // Calculator types
 type calculatorState = {
     display: string;
