@@ -6,7 +6,7 @@ const Footer = () => {
     const year: Date  = new Date()
     return (
         <footer className={styles["wrapper"]}>
-        <a href="https://www.linkedin.com/in/oleksandr-shmyhelskyi-6b11b020a/"  className={styles["link"]}>
+        <a href="https://www.linkedin.com/in/shmyhelskyi-oleksandr/"  className={styles["link"]}>
             <Image src="/linkedin.webp" alt="Linkedin" width={25} height={25}/>
             Linkedin
         </a>

@@ -5,7 +5,6 @@ const Nav = () => {
         <div className={styles["wrapper"]}>
             <Link href="/" className={styles["link"]}>Home</Link>
             <Link href="/projects" className={styles["link"]}>Projects</Link>
-            <Link href="/contacts" className={styles["link"]}>Contacts</Link>
         </div>
     );
 };

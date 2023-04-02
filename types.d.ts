@@ -1,6 +1,8 @@
+// Root 
 type Root = {
     calculator: calculatorState
 }
+// Calculator types
 type calculatorState = {
     display: string;
     firstOperand: string | null;
@@ -32,3 +34,5 @@ type operationAction = {
         operator: string,
     }
 }
+
+// FlashCards types

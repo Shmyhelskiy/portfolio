@@ -1,22 +1,28 @@
 import Heading from "../../components/Heading";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Head from "next/head";
+import styles from "../styles/Error.module.css"
 const Error = () => {
   const router = useRouter();
+  const [timer, setTimer] = useState(3)
 
   useEffect(() => {
     setTimeout(() => {
+      setTimer(timer - 1)
+    }, 1000);
+    setTimeout(() => {
       router.push("/");
     }, 3000);
-  }, [router]);
+  }, [router, timer]);
 
   return (
-    <div>
+    <div className={styles["wrapper"]}>
       <Head>
         <title>Error</title>
       </Head>
-      <Heading text="Somothing is going wrong"></Heading>
+        <Heading text="Something went wrong"></Heading>
+        <h2>You will come back to home page via {timer}</h2>
     </div>
   );
 };
