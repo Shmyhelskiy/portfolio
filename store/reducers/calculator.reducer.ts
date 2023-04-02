@@ -22,7 +22,7 @@ const calculatorReducer = (state = initialState, action: CalculatorAction) => {
         case DECIMAL : {
             if (!state.display.includes(".")) {
                 const newDisplay = state.display + ".";
-                return { ...state, display: newDisplay };
+                return { ...state, display: newDisplay, show: false};
               }
               return state;
             }
@@ -43,12 +43,14 @@ const calculatorReducer = (state = initialState, action: CalculatorAction) => {
                 newResult = operation(Number(display),memory, operator)
                 return {...state, display: newResult }
             }
-            else if ( operator === firstOperand) {
+            else if ( operator === firstOperand) {    
+                console.log(`her1e`);                            
                  newResult = operation(Number(display),memory, firstOperand)
-                return {...state, display: `0`, memory: newResult, firstOperand: firstOperand }
-            } else {
+                return {...state, display: `0`, memory: newResult, firstOperand: firstOperand, show: false }
+            } else {       
+                console.log(`here`);                      
                 newResult = operation(Number(display),memory, firstOperand)
-                return {...state, display: `0`, memory: newResult, firstOperand: operator }
+                return {...state, display: `0`, memory: newResult, firstOperand: operator, show: false }
             }    
         }
         case SHOW_RESULT: {
@@ -57,7 +59,7 @@ const calculatorReducer = (state = initialState, action: CalculatorAction) => {
             if ( !firstOperand || show) {
                 return state
             } 
-            return {...state, display: newResult, memory: 0, show: true}
+            return {...state, display: newResult, memory: Number(newResult),firstOperand: null, show: true}
         }
         default:
             return state

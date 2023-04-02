@@ -7,6 +7,9 @@ const pow = (x:number, y:number) => Math.pow(x,y)
 const sqrt = (x:number) =>  Math.sqrt(x)
 
 export const operation = (display: number, memory: number, operator: string | null) => {
+    if (operator === null) {
+        return memory    
+    }
     switch(operator) {
         case "sum": 
             return adding(display, memory)
