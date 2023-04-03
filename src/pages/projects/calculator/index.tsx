@@ -1,5 +1,6 @@
+import Head from "next/head";
 import Button from "../../../../components/Button"
-import styles from "../../../styles/Calculator.module.css"
+import styles from "../../../styles/Projects/Calculator/Calculator.module.css"
 import { operation, addNumber, addPoint, Clear, showResult } from "../../../../store/actions/calculator.actions";
 import { useDispatch, useSelector } from "react-redux";
 
@@ -9,6 +10,10 @@ const Calculator = () => {
     const data: calculatorState = useSelector((state: Root) => state.calculator as calculatorState )
     
     return (
+        <>
+        <Head>
+        <title>Calculator</title>
+        </Head>
         <main className={styles["wraper"]}> 
             <div className={styles["container"]}>
                 <div className={styles["display"]}>
@@ -88,6 +93,7 @@ const Calculator = () => {
                 </table>
             </div>
         </main>
+        </>
     );
 };
 

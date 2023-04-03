@@ -26,5 +26,5 @@
   transition: all 1s ease;
 }
 .image:hover {
-  transform: scale(1.15) rotate(10deg);
+  transform: scale(1.15);
 }
