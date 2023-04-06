@@ -20,11 +20,11 @@
   flex-direction: column;
   justify-content: center;
   border: 1px solid black;
+    transition: all 1s ease;
 }
 .image {
   padding: 20px;
-  transition: all 1s ease;
 }
-.image:hover {
-  transform: scale(1.15);
+.link:hover {
+  transform: scale(1.1);
 }
