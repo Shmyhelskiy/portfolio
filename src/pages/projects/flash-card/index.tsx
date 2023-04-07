@@ -16,7 +16,7 @@ useEffect (() => {
     <Head>
       <title>Flash Card</title>
     </Head>
-    <div className={styles["wrapper"]}>
+    <div className="flex m-5 h-full items-center flex-col ">
       <div className={styles["container"]}>
         <div className={styles["test"]}>
           <span>Score: </span>

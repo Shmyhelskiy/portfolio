@@ -8,7 +8,7 @@ type buttonTypes = {
 const Button: FC<buttonTypes> = ({ text, onClick}) => {
     return (
         <button onClick={onClick}>
-           {text} 
+        {text} 
         </button>
     );
 };

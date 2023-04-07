@@ -16,17 +16,17 @@ export default function Home() {
             <Heading text="Hello, welcome to my portfolio." />
             <div className={styles["container"]}>
               <div className={styles['left-container']}>
-               <header>
-                 <Image 
-                 className={styles["image"]}
+              <header>
+                <Image 
+                className={styles["image"]}
                   src="/my-photo.jpg"
                   height={144}
                   width={144}
                   alt="My photo"
-                 />
+                />
                 <Heading text="Alex Shmyhelskyi" tag="h2" />
-               </header>
-               <section className={styles["text"]}>
+              </header>
+              <section className={styles["text"]}>
                 <p>Hello everyone, I am <strong>Alex</strong>. I am a frontend developer. In my projects, I use HTML, CSS, JavaScript, React, Redux, and Next.js. You can see my projects in 
                 <Link href="/projects">⠀Projects⠀</Link> 
                 and code on⠀ 
@@ -34,7 +34,7 @@ export default function Home() {
                     GitHub.
                   </a>
                 </p>
-               </section>
+              </section>
               </div>
               <div>
                 <main className={styles['right-container']}>
