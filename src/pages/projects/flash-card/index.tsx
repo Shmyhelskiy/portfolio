@@ -1,6 +1,5 @@
 import Head from "next/head";
 import { useEffect } from 'react';   
-import styles from "../../../styles/Projects/FlashCard/FlashCard.module.css"
 import Card from '../../../../components/components-for-flashcard/Card/Card';
 import { useDispatch, useSelector } from 'react-redux';
 import {fillArray} from "../../../../store/actions/flashcard.actions"
@@ -16,15 +15,13 @@ useEffect (() => {
     <Head>
       <title>Flash Card</title>
     </Head>
-    <div className="flex m-5 h-full items-center flex-col ">
-      <div className={styles["container"]}>
-        <div className={styles["test"]}>
-          <span>Score: </span>
-          {data.score}
+    <div className="flex m-5 h-full items-center flex-col mb-5">
+      <div className="w-full h-14 flex justify-evenly">
+        <div>
+          <span>Score: {data.score} </span>
         </div>
-        <div className={styles["test"]}>
-          <span>Attempts: </span>
-          {data.attempts}
+        <div>
+          <span>Attempts: {data.attempts}</span>
         </div>
       </div>
       <Card /> 

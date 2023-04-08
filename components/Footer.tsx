@@ -1,4 +1,3 @@
-import styles from "../src/styles/Footer.module.css"
 import Image from "next/image";
 
 
