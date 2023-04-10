@@ -10,12 +10,11 @@ const Projects = () => {
         <Head>
           <title>Projects</title>
         </Head>
-        <div className={styles["wrapper"]}>
-          <div className={styles["container"]}>
-            <Link href="/projects/calculator" className={styles["link"]}>
+          <div className="flex min-w-full gap-2">
+            <Link href="/projects/calculator" className="flash-link">
             <Heading text="Calculator" tag="h2"/>
             <Image
-              className={styles["image"]}
+                className="p-5"
               priority
               src="/calculator.png"
               height={150}
@@ -23,10 +22,10 @@ const Projects = () => {
               alt="calculator"
             />
             </Link>
-            <Link href="/projects/flash-card" className={styles["link"]}>
+            <Link href="/projects/flash-card" className="flash-link">
               <Heading text="Flash card" tag="h2"/>
               <Image
-                className={styles["image"]}
+                className="p-5"
                 priority
                 src="/flashCard.png"
                 height={150}
@@ -34,11 +33,10 @@ const Projects = () => {
                 alt="Flash card"
               />
             </Link>
-            <div className={styles["link"]}>
+            <div className="flash-link max-w-[500px]">
               <Heading text="The rest will appear soon..." tag="h3"/>
             </div>
           </div>
-        </div>
         </>
     );
 };

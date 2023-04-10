@@ -16,7 +16,7 @@ useEffect (() => {
       <title>Flash Card</title>
     </Head>
     <div className="flex m-5 h-full items-center flex-col mb-5">
-      <div className="w-full h-14 flex justify-evenly">
+      <div className="w-full h-14 flex justify-evenly sm:text-2xl md:text-3xl lg:text-4xl">
         <div>
           <span>Score: {data.score} </span>
         </div>

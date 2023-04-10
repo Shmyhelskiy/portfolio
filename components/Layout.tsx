@@ -1,7 +1,7 @@
 import { FC, ReactNode } from "react";
 import Footer from "./Footer";
 import Header from "./Header";
-import styles from "../src/styles/Layout.module.css"
+
 
 type layoutProps = {
     children: ReactNode,
@@ -9,7 +9,7 @@ type layoutProps = {
 
 const Layout:FC<layoutProps> = ({ children }) => {
   return (
-    <div className={styles["wrapper"]}>
+    <div className="min-h-screen flex flex-col">
       <Header />
       {children}
       <Footer />

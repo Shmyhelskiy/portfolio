@@ -2,7 +2,7 @@ import Heading from "../../components/Heading";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Head from "next/head";
-import styles from "../styles/Error.module.css"
+
 const Error = () => {
   const router = useRouter();
   const [timer, setTimer] = useState(3)
@@ -17,7 +17,7 @@ const Error = () => {
   }, [router, timer]);
 
   return (
-    <div className={styles["wrapper"]}>
+    <div className="flex flex-col items-center justify-center min-h-80 font-bold md:text-2xl lg:text-3xl">
       <Head>
         <title>Error</title>
       </Head>

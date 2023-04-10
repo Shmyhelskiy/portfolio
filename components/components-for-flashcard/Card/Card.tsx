@@ -12,7 +12,7 @@ const handleClick = () =>{
 }
 
 return (
-        <div className="w-1/4 h-400 lg:h-700   flex mt-2 items-center flex-col bg-amber-100">
+        <div className="w-1/4 h-[400px] lg:h-[700px]   flex mt-2 items-center flex-col bg-amber-100">
             <div className="w-3/4 h-1/2 flex border-b-[3px] border-black">
                 <div className="w-1/3 flex justify-end items-end text-7xl">
                     <span>X</span>

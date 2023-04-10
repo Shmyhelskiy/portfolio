@@ -1,5 +1,4 @@
 import   { FC } from "react";
-import styles from "../src/styles/Header.module.css"
 import Nav from "./Nav";
 
 
@@ -7,7 +6,7 @@ import Nav from "./Nav";
 
 const Header:FC = () => {
     return (
-        <header className={styles["wrapper"]}>
+        <header className="w-full h-32 flex items-center  text-white bg-black">
           <Nav />
         </header>
     );

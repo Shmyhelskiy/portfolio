@@ -11,14 +11,15 @@ type calculatorState = {
     waitingForSecondOperand: boolean;
     memory: number;
     show: boolean;
-  };
+};
 
-  type CalculatorAction = {
+type CalculatorAction = {
     type: string,
     payload: {
         display: string;
         number: string;
         operator: string,
+        firstOperand?: string,
     }
 }
 

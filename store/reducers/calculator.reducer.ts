@@ -15,16 +15,16 @@ const calculatorReducer = (state = initialState, action: CalculatorAction) => {
             return initialState;
         }
         case ADD_NUMBER: {
-           const { number } = action.payload;
-           const newDisplay = state.display === "0" ? number : state.display + number;
-           return { ...state, display: newDisplay };
+        const { number } = action.payload;
+        const newDisplay = state.display === "0" ? number : state.display + number;
+        return { ...state, display: newDisplay };
         }
         case DECIMAL : {
             if (!state.display.includes(".")) {
                 const newDisplay = state.display + ".";
                 return { ...state, display: newDisplay, show: false};
-              }
-              return state;
+            }
+            return state;
             }
 
         case MATHOPERATION: {
@@ -39,16 +39,14 @@ const calculatorReducer = (state = initialState, action: CalculatorAction) => {
             
             if ( !waitingForSecondOperand && operator !== `sqrt`) {
                 return {...state, display: `0`, memory: Number(display), firstOperand: operator, waitingForSecondOperand: true}
-            } else if ( operator === `sqrt`) {
-                newResult = operation(Number(display),memory, operator)
+            } else if ( operator === `sqrt`) {                
+                newResult = operation(Number(display),memory, operator, firstOperand)
                 return {...state, display: newResult }
             }
-            else if ( operator === firstOperand) {    
-                console.log(`her1e`);                            
-                 newResult = operation(Number(display),memory, firstOperand)
+            else if ( operator === firstOperand) {                            
+                newResult = operation(Number(display),memory, firstOperand)
                 return {...state, display: `0`, memory: newResult, firstOperand: firstOperand, show: false }
-            } else {       
-                console.log(`here`);                      
+            } else {                          
                 newResult = operation(Number(display),memory, firstOperand)
                 return {...state, display: `0`, memory: newResult, firstOperand: operator, show: false }
             }    

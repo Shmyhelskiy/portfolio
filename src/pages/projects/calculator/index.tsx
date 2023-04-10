@@ -1,6 +1,5 @@
 import Head from "next/head";
-import Button from "../../../../components/Button"
-import styles from "../../../styles/Projects/Calculator/Calculator.module.css"
+import Button from "../../../../components/componetns-for-calculator/Button"
 import { operation, addNumber, addPoint, Clear, showResult } from "../../../../store/actions/calculator.actions";
 import { useDispatch, useSelector } from "react-redux";
 
@@ -14,14 +13,16 @@ const Calculator = () => {
         <Head>
         <title>Calculator</title>
         </Head>
-        <main className={styles["wraper"]}> 
-            <div className={styles["container"]}>
-                <div className={styles["display"]}>
-                    <h3>{data.display}</h3>
+        <main className="flex items-center justify-center h-[80vh]"> 
+            <div className="gap-2 w-[350px] h-[400px] border-2 border-black rounded-2xl bg-gray-800 flex flex-col items-center justify-center">
+                <div className="w-[80%] h-[40px] flex items-center justify-center bg-cyan-800">
+                    <h3 className="w-[85%] text-right rounded-2xl bg-gray-400 pr-1 overflow-hidden">
+                        {data.display}
+                    </h3>
                 </div>
-                <table className={styles["buttons"]}>
+                <table className="w-[80%] h-[80%]">
                     <tbody>
-                        <tr>
+                        <tr className="gap-2 w-[90%] m-5 flex justify-center">
                             <td>
                                 <Button text={`7`} onClick={()=> dispatch(addNumber(`7`))} />
                             </td>
@@ -38,7 +39,7 @@ const Calculator = () => {
                                 <Button text={`x^y`} onClick={()=> dispatch(operation(`pow`))}/>
                             </td>
                         </tr>
-                        <tr>
+                        <tr className="gap-2 w-[90%] m-5 flex justify-center">
                             <td>
                                 <Button text={`4`} onClick={()=> dispatch(addNumber(`4`))}/>
                             </td>
@@ -55,7 +56,7 @@ const Calculator = () => {
                                 <Button text={`%`} onClick={()=> dispatch(operation(`percentageOf`))}/>
                             </td>
                         </tr>
-                        <tr>
+                        <tr className="gap-2 w-[90%] m-5 flex justify-center">
                             <td>
                                 <Button text={`1`} onClick={()=> dispatch(addNumber(`1`))}/>
                             </td>
@@ -72,7 +73,7 @@ const Calculator = () => {
                                 <Button text={`√`} onClick={()=> dispatch(operation(`sqrt`))}/>
                             </td>
                         </tr>
-                        <tr>
+                        <tr className="gap-2 w-[90%] m-5 flex justify-center">
                             <td>
                                 <Button text={`C`} onClick={()=> dispatch(Clear())}/>
                             </td>
