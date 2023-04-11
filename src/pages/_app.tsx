@@ -10,7 +10,7 @@ const App = ({ Component, pageProps }: AppProps) => {
   return (
     <Provider store={store}>
     <Layout>
-      <Component {...pageProps} />
+      <Component {...pageProps} className="md-auto" />
     </Layout>
     </Provider>
   );

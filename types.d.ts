@@ -2,6 +2,7 @@
 type Root = {
     calculator: calculatorState;
     flashCard: NumbersState;
+    ToDo: ToDoState;
 }
 
 // Calculator types
@@ -57,3 +58,31 @@ type mathState = {
         answer: number,
         isRight:  boolean | undefined
     }
+
+// TO-Do types 
+
+type ToDoState = {
+    ToDo: ToDo[],
+    Done: ToDo[],
+}
+
+type ToDoAction = {
+    Post: any;
+    type: string,
+    payload: {
+        Post: Post;
+    };
+}
+type numberAction = {
+    type: string,
+    payload: {
+        number: string,
+    }
+}
+
+type Post = {
+    Title: string,
+    isDone: boolean,
+    id: number,
+}
+

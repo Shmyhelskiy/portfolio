@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}
-
 .footer-link {
   @apply flex mr-5 items-center gap-2 no-underline;
 }
@@ -15,6 +9,6 @@
   @apply flex gap-2 text-base lg:text-xl items-center;
 }
 
-.flash-link {
+.projects-link {
   @apply m-5 min-h-[200px] min-w-[200px] border-2 border-black rounded-2xl flex items-center flex-col justify-center hover:scale-110 ease-linear duration-500;
 }

@@ -9,7 +9,7 @@ type layoutProps = {
 
 const Layout:FC<layoutProps> = ({ children }) => {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen h-full flex flex-col">
       <Header />
       {children}
       <Footer />

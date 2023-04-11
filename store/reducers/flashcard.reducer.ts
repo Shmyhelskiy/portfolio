@@ -32,8 +32,7 @@ switch (action.type) {
             answer,
             isRight: undefined
         }
-  
-         return {...state, mathState: result}
+        return {...state, mathState: result}
     }
     case CHECK_ANSWER: {
         const copyState = {...state}

@@ -37,7 +37,7 @@ export default function Home() {
               </section>
               </div>
               <div>
-                <main className="flex flex-col gap-4">
+                <div className="flex flex-col gap-4">
                 <Heading text="My contacts"tag="h2" />
                 <a href="https://www.linkedin.com/in/shmyhelskyi-oleksandr/"  target="_blank" className="home-link">
                   <Image src="/linkedin.webp" alt="Linkedin" width={25} height={25}/>
@@ -55,7 +55,7 @@ export default function Home() {
                     <Image src="/email.webp" alt="Email" width={25} height={25}/>
                     shmyhelskyi.o.v@gmail.com
                 </a>
-                </main>
+                </div>
               </div>
             </div>
         </div>
