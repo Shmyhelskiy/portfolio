@@ -43,19 +43,14 @@ const  ToDoReducer = (state = ToDoState, action:ToDoAction) =>{
       return { ...state, Done: copyDone, ToDo: newToDo };
 
     case CLEAN_LIST:
-
       localStorage.setItem("state", JSON.stringify(ToDoState));
       return ToDoState;
   
     case CREATE_STATE:
       const lastStateString = localStorage.getItem("state");
-      const lastState = lastStateString ? JSON.parse(lastStateString) : null;
-      if (lastState !== null) {
-        return lastState;
-        } else {
-        return []
-      }
-
+      const lastState = lastStateString ? JSON.parse(lastStateString) : state;
+      return lastState;
+      
     default:
       return state;
   }
