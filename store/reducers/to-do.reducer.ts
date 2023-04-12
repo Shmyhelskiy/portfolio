@@ -53,7 +53,7 @@ const  ToDoReducer = (state = ToDoState, action:ToDoAction) =>{
       if (lastState !== null) {
         return lastState;
         } else {
-        return null
+        return []
       }
 
     default:
