@@ -12,7 +12,7 @@ const Post = ({ data }: { data: Post }) => {
   };
   
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center text-sm md:text-base">
       <div className="flex justify-center items-center mt-1  p-3 min-w-[250px] bg-sky-300 rounded-2xl">
         <div className="min-w-[5%]">
           <input

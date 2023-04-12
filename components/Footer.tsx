@@ -6,18 +6,18 @@ const Footer = () => {
     return (
         <footer className=" min-w-full h-12 flex text-gray-400 items-center justify-end bg-slate-600 pr-4 mt-auto">
             <a href="https://www.linkedin.com/in/shmyhelskyi-oleksandr/" target="_blank" className="footer-link">
-                <Image src="/linkedin.webp" alt="Linkedin" width={25} height={25}/>
-                Linkedin
+                <Image src="/linkedin.webp" alt="Linkedin" width={25} height={25} className="ml-1 w-[20px] sm:w-[25px]"/>
+                <p className="footer-text ">Linkedin</p>
             </a>
             <a href="https://github.com/Shmyhelskiy" target="_blank" className="footer-link ">
-                <Image src="/github.webp" alt="GitHub" width={25} height={25}/>
-                GitHub
+                <Image src="/github.webp" alt="GitHub" width={25} height={25} className="w-[20px] sm:w-[25px]"/>
+                <p className="footer-text">GitHub</p>
             </a>
             <a href="https://t.me/Shmyhelskyi_Oleksandr" target="_blank" className="footer-link ">
-                <Image src="/Telegram.webp" alt="Telegram" width={25} height={25}/>
-                Telegram
+                <Image src="/Telegram.webp" alt="Telegram" width={25} height={25} className="w-[20px] sm:w-[25px]"/>
+                <p className="footer-text">Telegram</p>
             </a>
-            <p>{year.getFullYear()}</p>
+            <p className="footer-text">{year.getFullYear()}</p>
         </footer>
     );
 };

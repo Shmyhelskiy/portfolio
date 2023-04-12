@@ -15,7 +15,7 @@ const Projects = () => {
         <Head>
           <title>Projects</title>
         </Head>
-          <div className="flex min-w-full gap-2">
+          <div className="flex flex-col items-center lg:flex-row lg:items-stretch min-w-full gap-2">
             <Link href="/projects/calculator" className="projects-link">
             <Heading text="Calculator" />
             <Image
