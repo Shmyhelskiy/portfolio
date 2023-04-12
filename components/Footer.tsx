@@ -4,7 +4,7 @@ import Image from "next/image";
 const Footer = () => {
     const year: Date  = new Date()
     return (
-        <footer className="h-12 flex text-gray-400 items-center justify-end bg-slate-600 pr-4 mt-auto">
+        <footer className=" min-w-full h-12 flex text-gray-400 items-center justify-end bg-slate-600 pr-4 mt-auto">
             <a href="https://www.linkedin.com/in/shmyhelskyi-oleksandr/" target="_blank" className="footer-link">
                 <Image src="/linkedin.webp" alt="Linkedin" width={25} height={25}/>
                 Linkedin

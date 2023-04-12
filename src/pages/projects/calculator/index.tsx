@@ -13,7 +13,7 @@ const Calculator = () => {
         <Head>
         <title>Calculator</title>
         </Head>
-        <main className="flex items-center justify-center h-[80vh]"> 
+        <main className="flex items-center justify-center h-screen"> 
             <div className="gap-2 w-[350px] h-[400px] border-2 border-black rounded-2xl bg-gray-800 flex flex-col items-center justify-center">
                 <div className="w-[80%] h-[40px] flex items-center justify-center bg-cyan-800">
                     <h3 className="w-[85%] text-right rounded-2xl bg-gray-400 pr-1 overflow-hidden">

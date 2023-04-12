@@ -11,7 +11,7 @@ export default function Home() {
       <Head>
         <title>Home</title>
       </Head>
-      <main className="flex w-full mt-5 min-h-[80vh] items-center justify-center bg-white">
+      <main className="flex w-full mt-5 min-h-screen items-center justify-center bg-white">
         <div className="min-h-full flex flex-col items-center">
             <Heading text="Hello, welcome to my portfolio." />
             <div className="pt-5 mt-5 flex justify-around max-w-[70%]">
