@@ -3,6 +3,7 @@ export const CHANGE_DONE = "CHANGE_DONE";
 export const CHANGE_TODO = "CHANGE_TODO";
 export const CLEAN_LIST = "CLEAN_LIST";
 export const CREATE_STATE = "CREATE_STATE";
+export const DELETE_ONE = "DELETE_ONE";
 
 export const AddPost  = (Post:Post) => {
     return {
@@ -33,5 +34,12 @@ export const cleanstate = () =>{
 export const createState = () =>{
     return {
         type: CREATE_STATE,
+    }
+}
+
+export const deleteOne = (Post:Post) =>{
+    return {
+        type: DELETE_ONE,
+        Post: Post
     }
 }

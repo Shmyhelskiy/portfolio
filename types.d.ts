@@ -64,6 +64,7 @@ type mathState = {
 type ToDoState = {
     ToDo: ToDo[],
     Done: ToDo[],
+    counter: number,
 }
 
 type ToDoAction = {

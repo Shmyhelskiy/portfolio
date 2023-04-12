@@ -1,18 +1,30 @@
-import { SetStateAction, useState } from "react";
-import { useDispatch } from "react-redux";
+import { SetStateAction, useState, useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 
 const Header = () => {
+    const data: ToDoState = useSelector((state: Root) => state.ToDo as ToDoState )
+    const dispatch = useDispatch();
     const [title, setTitle] = useState("");
     const [counter, setCounter] = useState(0);
     const [value, setValue] = useState("");
-    const dispatch = useDispatch();
-
+    
+    const getCounter = () => {
+        const checkout = typeof window !== 'undefined' ? localStorage.getItem('state') : null
+        const lastState = checkout ? JSON.parse(checkout) : 0;
+        setCounter(lastState.counter)
+    }
+    useEffect(() => {
+        getCounter()
+        }, []);
+    
     const takeTask = (event: { target: { value: SetStateAction<string>; }; }) => {
         setTitle(event.target.value);
         setValue(event.target.value);
     };
     
     const createNewPost = () => {
+        console.log(counter);
+        
         const newPost = { Title: title, isDone: false, id: 0,};
         newPost.id = counter;
         setCounter((counter) => counter + 1);
