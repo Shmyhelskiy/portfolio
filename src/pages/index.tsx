@@ -38,7 +38,7 @@ export default function Home() {
               </div>
               <div>
                 <div className="flex flex-col gap-4 w-1/3 ml-8">
-                  <Heading text="My contacts"tag="h2" />
+                  <Heading text="Contacts"tag="h2" />
                   <a href="https://www.linkedin.com/in/shmyhelskyi-oleksandr/"  target="_blank" className="home-link">
                     <Image src="/linkedin.webp" alt="Linkedin" width={25} height={25}/>
                     Linkedin

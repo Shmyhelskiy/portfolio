@@ -13,14 +13,14 @@ const ToDo = () => {
     dispatch(createState());
     }, [dispatch]);
     return (
-        <div className="h-screen flex flex-col relative">
+        <div className="h-full flex flex-col">
             <Header />
             <main className="flex justify-center text-center flex-col md:flex-row">
-                <div className="min-w-[250px]  max-w-[500px] max-h-[800px] mr-5 mt-3 break-all overflow-x-auto">
+                <div className="min-w-[250px]  max-w-[500px] max-h-[600px] mr-5 mt-3 break-all overflow-x-auto">
                     <Heading text="To-Do"></Heading>
                     <TODO></TODO>
                 </div>
-                <div  className="min-w-[250px] max-w-[500px] mr-5 mt-3 break-all max-h-[800px] overflow-x-auto ">
+                <div  className="min-w-[250px] max-w-[500px] max-h-[600px] mr-5 mt-3 break-all  overflow-x-auto ">
                 <Heading text="Done"></Heading>
                     <Done></Done>
                 </div>

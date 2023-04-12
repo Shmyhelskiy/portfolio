@@ -2,14 +2,9 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import Heading from "../../../components/Heading"
-import { useEffect } from "react";
-import { useDispatch } from "react-redux";
 
 const Projects = () => {
-  const dispatch = useDispatch();
-  useEffect(() => {
-  dispatch({ type: "CREATE_STATE" });
-  }, [dispatch]);
+
     return (
         <>
         <Head>
