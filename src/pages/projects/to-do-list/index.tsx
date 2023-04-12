@@ -1,6 +1,5 @@
 import Header from "../../../../components/components-for-ToDo/Header";
 import { useDispatch, useSelector,  } from 'react-redux'
-import Image from "next/image";
 import TODO from "../../../../components/components-for-ToDo/ToDo";
 import Done from "../../../../components/components-for-ToDo/Done";
 import Heading from "../../../../components/Heading";
@@ -12,7 +11,7 @@ const ToDo = () => {
     const dispatch = useDispatch();
     useEffect(() => {
     dispatch({ type: "CREATE_STATE" });
-    }, [dispatch]);
+    }, []);
     return (
         <div className="h-screen flex  flex-col relative">
             <Header />
