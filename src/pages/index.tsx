@@ -27,7 +27,7 @@ export default function Home() {
                 <Heading text="Alex Shmyhelskyi"/>
               </header>
               <section className="sm:text-sm md:text-base lg:text-xl mt-5 max-w-[70%]">
-                <p>Hello everyone, I am <strong>Alex</strong>. I am a frontend developer. In my projects, I use HTML, CSS, tailwindcss, JavaScript, React, Redux, and Next.js. You can see my projects in 
+                <p>Hello everyone, I am <strong>Alex</strong>. I am a frontend developer. In my projects, I use HTML, CSS, Tailwindcss, JavaScript, React, Redux, and Next.js. You can see my projects in 
                 <Link href="/projects">⠀Projects⠀</Link> 
                 and code on⠀ 
                 <a href="https://github.com/Shmyhelskiy">
