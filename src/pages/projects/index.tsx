@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import Heading from "../../../components/Heading"
+import TransitionEffect from "../../../components/TransitionEffect";
 
 const Projects = () => {
 
@@ -10,6 +11,7 @@ const Projects = () => {
         <Head>
           <title>Projects</title>
         </Head>
+        <TransitionEffect />
           <div className="flex flex-col items-center lg:flex-row lg:items-stretch min-w-full gap-2">
             <Link href="/projects/calculator" className="projects-link">
             <Heading text="Calculator" />

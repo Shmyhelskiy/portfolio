@@ -2,6 +2,7 @@ import Head from "next/head";
 import Button from "../../../../components/componetns-for-calculator/Button"
 import { operation, addNumber, addPoint, Clear, showResult } from "../../../../store/actions/calculator.actions";
 import { useDispatch, useSelector } from "react-redux";
+import TransitionEffect from "../../../../components/TransitionEffect";
 
 
 const Calculator = () => {
@@ -13,6 +14,7 @@ const Calculator = () => {
         <Head>
         <title>Calculator</title>
         </Head>
+        <TransitionEffect />
         <main className="flex items-center justify-center h-full mt-[10%]"> 
             <div className="gap-2 w-[300px] sm:w-[350px] h-[400px] border-2 border-black rounded-2xl bg-gray-800 flex flex-col items-center justify-center">
                 <div className="w-[80%] h-[40px] flex items-center justify-center bg-cyan-800">

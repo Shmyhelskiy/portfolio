@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import Heading from '../../components/Heading'
+import TransitionEffect from '../../components/TransitionEffect'
 
 
 
@@ -11,6 +12,7 @@ export default function Home() {
       <Head>
         <title>Home</title>
       </Head>
+      <TransitionEffect />
       <main className=" w-full h-full flex items-center justify-center lg:mt-5 bg-white">
         <div className="min-h-full flex flex-col items-center w-2/3">
             <Heading text="Hello, welcome to my portfolio." />
