@@ -11,11 +11,11 @@ export default function Home() {
       <Head>
         <title>Home</title>
       </Head>
-      <main className="flex w-full lg:mt-5 min-h-screen items-center justify-center bg-white">
+      <main className=" w-full h-full flex items-center justify-center lg:mt-5 bg-white">
         <div className="min-h-full flex flex-col items-center w-2/3">
             <Heading text="Hello, welcome to my portfolio." />
-            <div className="pt-5 mt-5 flex justify-around max-w-[70%]">
-              <div className="max-w-[50%]">
+            <div className="pt-5 mt-5 flex flex-col sm:flex-row justify-around max-w-[70%]">
+              <div className="lg:max-w-[50%]">
               <header>
                 <Image 
                 className="rounded-full mb-5"
@@ -37,7 +37,7 @@ export default function Home() {
               </section>
               </div>
               <div>
-                <div className="flex flex-col gap-4 w-1/3 ml-8">
+                <div className="flex flex-col gap-4 w-1/3 ml-8 mt-5 sm:mt-0">
                   <Heading text="Contacts"tag="h2" />
                   <a href="https://www.linkedin.com/in/shmyhelskyi-oleksandr/"  target="_blank" className="home-link">
                     <Image src="/linkedin.webp" alt="Linkedin" width={25} height={25}/>

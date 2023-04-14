@@ -17,12 +17,12 @@ const Error = () => {
   }, [router, timer]);
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-80 font-bold md:text-2xl lg:text-3xl">
+    <div className="flex flex-col items-center justify-center font-bold md:text-2xl lg:text-3xl mt-[20%]">
       <Head>
         <title>Error</title>
       </Head>
         <Heading text="Something went wrong"></Heading>
-        <h2>You will come back to home page via {timer}</h2>
+        <h2 className="text-xs md:text-2xl lg:text-3xl">You will come back to home page via {timer}</h2>
     </div>
   );
 };
