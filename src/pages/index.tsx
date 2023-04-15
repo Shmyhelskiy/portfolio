@@ -4,8 +4,6 @@ import Link from 'next/link'
 import Heading from '../../components/Heading'
 import TransitionEffect from '../../components/TransitionEffect'
 
-
-
 export default function Home() {
   return (
     <>
@@ -13,7 +11,7 @@ export default function Home() {
         <title>Home</title>
       </Head>
       <TransitionEffect />
-      <main className=" w-full h-full flex items-center justify-center lg:mt-5 bg-white">
+      <main className=" w-full h-full flex items-center justify-center lg:mt-5 ">
         <div className="min-h-full flex flex-col items-center w-2/3">
             <Heading text="Hello, welcome to my portfolio." />
             <div className="pt-5 mt-5 flex flex-col sm:flex-row justify-around max-w-[70%]">
@@ -46,7 +44,7 @@ export default function Home() {
                     Linkedin
                   </a>
                   <a href="https://github.com/Shmyhelskiy" target="_blank" className="home-link">
-                      <Image src="/github.webp" alt="GitHub" width={25} height={25}/>
+                      <Image src="/github.webp" alt="GitHub" width={25} height={25} className='dark:bg-white'/>
                       GitHub
                   </a>
                   <a href="https://t.me/Shmyhelskyi_Oleksandr" target="_blank" className="home-link">

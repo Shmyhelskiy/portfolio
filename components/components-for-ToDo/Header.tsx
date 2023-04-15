@@ -42,12 +42,12 @@ const Header = () => {
 
     return (
         <header className="m-5 flex flex-col items-center">
-        <div className="text-white flex justify-center items-center bg-sky-500 min-w-[250px] text-base md:text-xl lg:text-4xl rounded-md ">
+        <div className="text-white flex justify-center items-center bg-sky-500 min-w-[250px] text-base md:text-xl lg:text-4xl rounded-md dark:bg-sky-800">
             <h2>To-Do List</h2>
         </div>
         <div className="flex justify-center pt-5">
             <input
-            className="text-sm md:text-lg mr-5 outline-0 focus:border-b focus:border-b-orange-300"
+            className="text-sm md:text-lg mr-5 outline-0 focus:border-b focus:border-b-orange-300 dark:bg-sky-800 rounded-md"
             placeholder="Add Task"
             type="text"
             onChange={takeTask}
