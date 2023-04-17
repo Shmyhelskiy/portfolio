@@ -4,6 +4,7 @@ import Link from 'next/link'
 import Heading from '../../components/Heading'
 import TransitionEffect from '../../components/TransitionEffect'
 
+
 export default function Home() {
   return (
     <>
