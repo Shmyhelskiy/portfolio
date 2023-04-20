@@ -1,4 +1,4 @@
-import { operation } from "../../functions/calculator.fanctions/calculator.fanctions";
+import { operation } from "../../functions/calculator.functions/calculator.functions";
 import { ADD_NUMBER, RESET_DISPLAY, DECIMAL, MATHOPERATION, SHOW_RESULT } from "../actions/calculator.actions"
 
 const initialState: calculatorState = {

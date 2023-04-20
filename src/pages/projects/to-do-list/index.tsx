@@ -6,6 +6,7 @@ import Heading from "../../../../components/Heading";
 import { useEffect } from "react";
 import {createState} from "../../../../store/actions/toDo.actions"
 import TransitionEffect from "../../../../components/TransitionEffect";
+import Head from "next/head";
 
 const ToDo = () => {
     const data: ToDoState = useSelector((state: Root) => state.ToDo as ToDoState )
@@ -14,10 +15,14 @@ const ToDo = () => {
     dispatch(createState());
     }, [dispatch]);
     return (
-        <div className="h-full flex flex-col">
+    <>
+        <Head>
+            <title>Todo List</title>
+        </Head>
+        <main className="h-full flex flex-col">
             <Header />
             <TransitionEffect />
-            <main className="flex justify-center text-center flex-col md:flex-row">
+            <div className="flex justify-center text-center flex-col md:flex-row">
                 <div className="min-w-[250px]  max-w-[500px] max-h-[600px] mr-5 mt-3 break-all overflow-x-auto">
                     <Heading text="To-Do"></Heading>
                     <TODO></TODO>
@@ -26,8 +31,9 @@ const ToDo = () => {
                 <Heading text="Done"></Heading>
                     <Done></Done>
                 </div>
-            </main>
-        </div>
+            </div>
+        </main>
+    </>
     );
 };
 

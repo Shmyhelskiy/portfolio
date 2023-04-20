@@ -56,6 +56,10 @@ export default function Home() {
                       <Image src="/email.webp" alt="Email" width={25} height={25}/>
                       shmyhelskyi.o.v@gmail.com
                   </a>
+                  <a target='_blank' className='home-link items-center justify-center rounded-lg border-2 border-solid bg-dark p-2.5 px-6 text-lg font-semibol cursor-pointer
+                  hover:bg-sky-800 hover:text-white' download={true} href='/CV Oleksandr Shmyhelskyi Front-end developer.pdf'>
+                  Resume
+                  </a>
                 </div>
               </div>
             </div>

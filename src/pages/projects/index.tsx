@@ -46,6 +46,17 @@ const Projects = () => {
                 alt="Todo list"
               />
             </Link>
+            <Link href="/projects/weather" className="projects-link">
+              <Heading text="Weather App"/>
+              <Image
+                className="p-5 min-h-[80%]"
+                priority
+                src="/weather.png"
+                height={150}
+                width={150}
+                alt="weather"
+              />
+            </Link>
             <div className="projects-link max-w-[250px]">
               <Heading text="The rest will appear soon..." tag="h3"/>
             </div>

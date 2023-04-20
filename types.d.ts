@@ -5,6 +5,11 @@ type Root = {
     ToDo: ToDoState;
 }
 
+// Icons 
+type IconsType = {
+    className: string,
+}
+
 // Calculator types
 type calculatorState = {
     display: string;
@@ -86,4 +91,3 @@ type Post = {
     isDone: boolean,
     id: number,
 }
-
