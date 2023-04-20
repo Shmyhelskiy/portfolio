@@ -1,8 +1,11 @@
-import { useRef } from "react";
+import { FC, useRef } from "react";
 import DetailsExperience from "./DetailsExperience";
 import {motion, useScroll } from "framer-motion";
 
-const Experience = () => {
+type ExperienceType = {
+    id:string
+}
+const Experience:FC<ExperienceType> = ({id}) => {
     const ref = useRef(null)
     const {scrollYProgress} = useScroll(
         {
@@ -11,8 +14,8 @@ const Experience = () => {
         }
     )
     return (
-        <div className="my-80">
-            <h2 className="className='text-sm mb-20 md:text-lg lg:text-5xl font-bold text-center w-full">
+        <div className="my-80" id={id}>
+            <h2 className="mb-20 text-center w-full font-bold text-4xl lg:text-7xl">
                 Experience
             </h2>
 
@@ -21,7 +24,7 @@ const Experience = () => {
                 style={{scaleY: scrollYProgress}}
                 className="absolute left-8 top-0 w-[4px] h-full bg-black dark:bg-white origin-top"/>
 
-                <ul className="w-full flex flex-col items-center justify-between ml-4">
+                <ul className="w-full flex flex-col items-center justify-between">
                     <DetailsExperience company="Freelance" 
                     position="Front-end developer" 
                     time="03.2023-Present" 

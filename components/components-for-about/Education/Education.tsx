@@ -1,9 +1,12 @@
-import { useRef } from "react";
+import { FC, useRef } from "react";
 import {motion, useScroll } from "framer-motion";
 import DetailsEducation from "./DetailsEducation";
 
+type EEducationType = {
+    id:string
+}
 
-const Education = () => {
+const Education:FC<EEducationType> = ({id}) => {
     const ref = useRef(null)
     const {scrollYProgress} = useScroll(
         {
@@ -12,8 +15,8 @@ const Education = () => {
         }
     )
     return (
-        <div className="mb-50 md:mb-60">
-            <h2 className="className='text-sm mb-20 md:text-lg lg:text-5xl font-bold text-center w-full">
+        <div className="mb-50 md:mb-60" id={id}>
+            <h2 className="mb-20 text-center w-full font-bold text-4xl lg:text-7xl">
                 Experience
             </h2>
 
@@ -22,7 +25,7 @@ const Education = () => {
                 style={{scaleY: scrollYProgress}}
                 className="absolute left-8 top-0 w-[4px] h-full bg-black dark:bg-white origin-top"/>
 
-                <ul className="w-full flex flex-col items-center justify-between ml-4">
+                <ul className="w-full flex flex-col items-center justify-between">
                     <DetailsEducation company="CURSOR.Education" 
                     position="FRONT-END ADVANCED" 
                     time="12.2022-03.2023" 

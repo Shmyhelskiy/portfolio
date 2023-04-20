@@ -1,10 +1,14 @@
 import {motion} from "framer-motion"
 import Skill from './Skill';
+import { FC } from "react";
 
-const Skills = () => {
+type SkillsType = {
+    id:string
+}
+const Skills:FC<SkillsType> = ({id}) => {
     return (
         <>
-        <div className='flex flex-col justify-center items-center'> 
+        <div className='flex flex-col justify-center items-center' id={id}> 
             <h1 className='font-bold text-4xl lg:text-7xl'>Skills</h1>
             <div className='w-full h-[40vh] sm:h-[60vh] md-h-[80vh] lg:h-screen relative flex items-center justify-center rounded-full
             bg-circularLight md:bg-circularLightMd lg:bg-circularLightLg xl:bg-circularLightXl 
@@ -20,8 +24,8 @@ const Skills = () => {
                 <Skill name="JavaScript" x="-20vw" y="0vw"/>
                 <Skill name="React" x="23vw" y="-5vw"/>
                 <Skill name="Github" x="0vw" y="-14vw"/>
-                <Skill name="NextJS" x="-10vw" y="16vw"/>
-                <Skill name="Tailwind CSS " x="18vw" y="-17vw"/>
+                <Skill name="NextJS" x="-10vw" y="15vw"/>
+                <Skill name="Tailwind CSS " x="18vw" y="-16vw"/>
 
             </div>
 
