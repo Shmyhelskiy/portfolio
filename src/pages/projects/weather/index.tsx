@@ -30,7 +30,7 @@ const Weather = () => {
 
     const takeWeather = async () => {
         try {
-            const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=d4fb1afa9faf4577a17150842231804&q=${value}&aqi=no`);
+            const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=370973a3895d4c28861194155232204&q=${value}&aqi=no`);
             const data = await response.json();
                 if ( `error` in data ){
                     return setIsFound('No matching location found.')
