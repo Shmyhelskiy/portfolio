@@ -3,9 +3,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Heading from '../../components/Heading'
 import TransitionEffect from '../../components/TransitionEffect'
+import { FC } from 'react'
 
+const Home:FC = () => {
 
-export default function Home() {
   return (
     <>
       <Head>
@@ -40,19 +41,19 @@ export default function Home() {
               <div>
                 <div className="flex flex-col gap-4 w-1/3 ml-8 mt-5 sm:mt-0">
                   <Heading text="Contacts"tag="h2" />
-                  <a href="https://www.linkedin.com/in/shmyhelskyi-oleksandr/"  target="_blank" className="home-link">
+                  <a href="https://www.linkedin.com/in/shmyhelskyi-oleksandr/"  target="_blank"  aria-label='Linkedin' className="home-link">
                     <Image src="/linkedin.webp" alt="Linkedin" width={25} height={25}/>
                     Linkedin
                   </a>
-                  <a href="https://github.com/Shmyhelskiy" target="_blank" className="home-link">
+                  <a href="https://github.com/Shmyhelskiy" target="_blank" aria-label='GitHub' className="home-link">
                       <Image src="/github.webp" alt="GitHub" width={25} height={25} className='dark:bg-white'/>
                       GitHub
                   </a>
-                  <a href="https://t.me/Shmyhelskyi_Oleksandr" target="_blank" className="home-link">
+                  <a href="https://t.me/Shmyhelskyi_Oleksandr" target="_blank" aria-label='Telegram' className="home-link">
                       <Image src="/Telegram.webp" alt="Telegram" width={25} height={25}/>
                       Telegram
                   </a>
-                  <a href="mailto:shmyhelskyi.o.v@gmail.com" target="_blank" className="home-link">
+                  <a href="mailto:shmyhelskyi.o.v@gmail.com" target="_blank" aria-label='Email' className="home-link">
                       <Image src="/email.webp" alt="Email" width={25} height={25}/>
                       shmyhelskyi.o.v@gmail.com
                   </a>
@@ -68,3 +69,5 @@ export default function Home() {
     </>
   )
 }
+
+export default Home;

@@ -13,6 +13,3 @@ const MoonIcon:FC<IconsType> = ({className}) => {
 };
 
 export default MoonIcon;
-
-// const MoonIcon:FC<IconsType> = (className) => {
-//     console.log(className);

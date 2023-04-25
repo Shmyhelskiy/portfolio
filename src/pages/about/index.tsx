@@ -15,7 +15,7 @@ const About = () => {
         <main className='flex flex-col pb-5'>
             <div className='flex flex-col justify-center items-center mt-5 h-screen'>
                 <h1 className='text-base md:text-lg lg:text-5xl font-bold '>Thank you for wanting to know more about me</h1>
-                <ul>
+                <ul className='flex flex-col items-start'>
                     <Anchor link='#skills' text='Jump to Skills'/>
                     <Anchor link='#Experience' text='Jump to Experience'/>
                     <Anchor link='#Education' text='Jump to Education'/>

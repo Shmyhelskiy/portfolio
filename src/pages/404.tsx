@@ -19,7 +19,7 @@ const Error = () => {
   return (
     <div className="flex flex-col items-center justify-center font-bold md:text-2xl lg:text-3xl mt-[20%]">
       <Head>
-        <title>Error</title>
+        <title>404</title>
       </Head>
         <Heading text="Something went wrong"></Heading>
         <h2 className="text-xs md:text-2xl lg:text-3xl">You will come back to home page via {timer}</h2>
