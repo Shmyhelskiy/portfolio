@@ -12,7 +12,8 @@ const Projects = () => {
           <title>Projects</title>
         </Head>
         <TransitionEffect />
-          <div className="flex flex-col items-center lg:flex-row lg:items-stretch min-w-full gap-2">
+          <p className="text-center m-5 font-bold text-base md:text-2xl "> There are a few little projects here where I practice or try out new whiteboards and such </p>
+          <div className="flex flex-col flex-wrap items-center lg:flex-row lg:items-stretch min-w-full gap-2">
             <Link href="/projects/calculator" className="projects-link">
             <Heading text="Calculator" />
             <Image
@@ -24,6 +25,7 @@ const Projects = () => {
               alt="calculator"
             />
             </Link>
+
             <Link href="/projects/flash-card" className="projects-link">
               <Heading text="Flash card"/>
               <Image
@@ -35,6 +37,7 @@ const Projects = () => {
                 alt="Flash card"
               />
             </Link>
+
             <Link href="/projects/to-do-list" className="projects-link">
               <Heading text="To-Do list"/>
               <Image
@@ -46,6 +49,7 @@ const Projects = () => {
                 alt="Todo list"
               />
             </Link>
+
             <Link href="/projects/weather" className="projects-link">
               <Heading text="Weather App"/>
               <Image
@@ -57,6 +61,19 @@ const Projects = () => {
                 alt="weather"
               />
             </Link>
+
+            <Link href="/projects/Graphs" className="projects-link">
+              <Heading text="Graphs"/>
+              <Image
+                className="p-5 min-h-[80%]"
+                priority
+                src="/Graphs.png"
+                height={150}
+                width={150}
+                alt="Graphs"
+              />
+            </Link>
+            
             <div className="projects-link max-w-[250px]">
               <Heading text="The rest will appear soon..." tag="h3"/>
             </div>

@@ -1,5 +1,6 @@
 // Root 
 type Root = {
+    managerOfMoney: managerOfMoneyState;
     calculator: calculatorState;
     flashCard: NumbersState;
     ToDo: ToDoState;
@@ -91,3 +92,41 @@ type Post = {
     isDone: boolean,
     id: number,
 }
+
+
+// Manger of money 
+
+type managerOfMoneyState = {
+    isCompleate: boolean,
+    DataMoney: {
+        salary: number,
+        livingExpenses: number,
+        savings: number,
+        savingsYears: number,
+        percentage: number
+    }
+}
+
+type managerOfMoneyAction = {
+    dataMoney: { dataMoney: any; };
+    type: string,
+    payload: {
+        isCompleate?: boolean,
+        dataMoney?: {
+            salary: number,
+            livingExpenses: number,
+            savings: number,
+            savingsYears: number,
+            percentage: number
+        }
+    }
+}
+
+type DataMoney = {
+    salary: number,
+    livingExpenses: number,
+    savings: number,
+    savingsYears: number,
+    percentage: number
+}
+
